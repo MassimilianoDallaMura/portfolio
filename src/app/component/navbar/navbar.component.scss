@@ -1,0 +1,101 @@
+/* Navbar */
+.navbar {
+  background-color: var(--navbar-background-color); /* Usa la variabile per il colore del tema */
+  padding: 1rem;
+  position: fixed; /* Fissa la navbar in alto */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Aggiungi uno spazio superiore per il contenuto della pagina per evitare che venga nascosto dalla navbar fissa */
+body {
+  padding-top: 4rem; /* Regola l'altezza in base all'altezza della navbar */
+}
+
+.navbar-brand img {
+  width: 40px;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra gli elementi della navbar */
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin: 0 20px; /* Spazio tra le icone (aumentato) */
+}
+
+
+/* Styling for the project menu */
+.project-menu {
+  margin-bottom: 80px;
+}
+
+.project-menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+/* Stile comune per i pulsanti */
+.btn-custom {
+  background-color: transparent; /* Sfondo trasparente */
+  border: 2px solid #04E762; /* Bordo di colore #04E762 */
+  color: #04E762; /* Colore del testo */
+  font-weight: bold; /* Testo in grassetto */
+  border-radius: 8px; /* Angoli arrotondati */
+  padding: 10px 20px; /* Padding per dimensionare il pulsante */
+  text-transform: uppercase; /* Testo tutto maiuscolo */
+  transition: background-color 0.3s, color 0.3s; /* Transizione per effetto hover */
+}
+
+.btn-custom:hover {
+  background-color: #04E762; /* Colore di sfondo al passaggio del mouse */
+  color: #fff; /* Colore del testo al passaggio del mouse */
+}
+
+/* Media query per dispositivi mobili */
+@media (max-width: 767px) {
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: center; /* Mantiene gli elementi centrati */
+    width: 50%;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.2rem; /* Riduce la dimensione del testo */
+    margin: 0 10px; /* Riduce il margine tra le icone */
+  }
+
+  .btn-custom {
+    padding: 8px 15px; /* Riduce il padding per il pulsante */
+    font-size: 0.5rem; /* Riduce la dimensione del testo del pulsante */
+  }
+}
+
+/* Media query per tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.4rem;
+    margin: 0 15px; /* Spazio tra le icone */
+  }
+
+  .btn-custom {
+    margin-left: 10px;
+  }
+}

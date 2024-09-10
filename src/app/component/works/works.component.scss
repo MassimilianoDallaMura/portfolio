@@ -1,0 +1,306 @@
+#works {
+    margin: 100px;
+}
+
+
+
+
+
+
+.title {
+    color: #8752dd;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-custom-static {
+    color: #04E762;
+    background-color: transparent;
+    border: 2px solid #04E762;
+}
+
+.btn-custom-static:hover {
+  background-color: #04E762;
+  color: #fff;
+}
+
+.btn-custom-git {
+  color: white;
+  background-color: rgba(0, 128, 0, 0.7);
+
+}
+
+.btn-custom-git:hover {
+background-color: #04E762;
+color: #fff;
+}
+
+.btn-custom-static, .btn-custom-git {
+  font-size: 1vw;
+  padding: 10px 20px;
+  border: 2px solid;
+  border-radius: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block; /* Aggiungi questa proprietà per mantenere le dimensioni del pulsante */
+}
+
+
+
+.btn-custom {
+    background-color: transparent;
+    border: 2px solid #04E762;
+    text-align: center;
+    color: #04E762;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
+    animation: bounce 2s infinite; /* Bounce animation added */
+  }
+  
+  .btn-custom:hover {
+    background-color: #04E762;
+    color: #fff;
+    animation: bounce 0.5s; /* Faster bounce on hover */
+  }
+
+
+
+.btn-filter {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: 2px solid #8752dd;
+    color: #8752dd;
+    background-color: transparent;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-filter.active {
+    background-color: #8752dd;
+    color: #fff;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.badge-group {
+    margin-bottom: 50px;
+}
+
+.badge-tech {
+  margin-right: 10px; /* Aggiungi spazio tra le badge */
+}
+
+
+
+/* styles.css */
+.badge-custom {
+    background-color: #007bff; /* Colore di sfondo personalizzato */
+    color: #fff; /* Colore del testo */
+    font-size: 1rem; /* Dimensione del testo */
+    width: 20%;
+  }
+
+/* Specific styles for each technology badge */
+.badge-tech.css {
+    background-color: #264de4; /* Colore di sfondo per CSS */
+}
+
+.badge-tech.angular {
+    background-color: #dd0031; /* Colore di sfondo per Angular */
+}
+
+.badge-tech.javascript {
+    background-color: #f7e02f; /* Colore di sfondo per JavaScript */
+}
+
+.badge-tech.java {
+    background-color: #f89820; /* Colore di sfondo per Java */
+}
+
+.badge-tech.springboot {
+    background-color: #6db33f; /* Colore di sfondo per Spring Boot */
+}
+
+.badge-tech.postgresql {
+    background-color: #336791; /* Colore di sfondo per PostgreSQL */
+}
+
+.badge-tech.html {
+    background-color: #e34f26; /* Colore di sfondo per HTML */
+}
+
+.badge-tech.python {
+    background-color: #306998; /* Colore di sfondo per Python */
+}
+
+.badge-tech.django {
+    background-color: #092e20; /* Colore di sfondo per Django */
+}
+
+.badge-tech.mysql {
+    background-color: #00758f; /* Colore di sfondo per MySQL */
+
+}
+  
+
+.bordered {
+    border: 2px solid white; /* Aggiunge un bordo bianco di 2px di spessore */
+    padding: 10px; /* Aggiunge un po' di spazio interno per migliorare la leggibilità */
+    border-color: #04E762;
+}
+
+.carousel {
+    width: 80%;
+    margin: 0 auto; /* Centra la slideshow */
+  }
+  
+  .carousel-item {
+    text-align: center;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+   color: #04E762;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .carousel-control-prev-icon:hover,
+  .carousel-control-next-icon:hover {
+    background-color: #04E762; /* Cambia colore al passaggio del mouse */
+  }
+  
+
+
+  /* CSS */
+  .video-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Assicura che il pulsante non fuoriesca dal video */
+}
+
+video {
+    display: block;
+    height: auto;
+    justify-content: center; 
+    align-items: center;
+}
+
+.play-pause {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Sfondo semi-trasparente */
+    color: #fff; /* Colore del testo */
+    border: none;
+    padding: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none; /* Nasconde il pulsante di default */
+    z-index: 10; /* Assicura che il pulsante sia sopra il video e i controlli del browser */
+}
+
+.video-container:hover .play-pause {
+    display: block; /* Mostra il pulsante quando il cursore è sopra il contenitore del video */
+}
+
+.project-menu-list {
+  margin-bottom: 100px;
+}
+
+.project-menu-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #04E762;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.project-menu-item:hover {
+  background-color: #f8f9fa;
+}
+
+.project-menu-img {
+  width: 50px; /* Adatta la dimensione dell'immagine */
+  height: 50px; /* Mantiene l'immagine quadrata */
+  object-fit: cover;
+  margin-right: 15px; /* Spazio tra immagine e testo */
+}
+
+.project-menu-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.project-menu-name {
+  font-size: 1rem; /* Dimensione del testo per il nome del progetto */
+}
+
+.btn-arrow {
+  background: transparent;
+  border: none;
+  color: #04E762; /* Colore della freccia */
+  font-size: 1.2rem; /* Dimensione della freccia */
+  transition: color 0.3s;
+}
+
+.btn-arrow:hover {
+  color: #028A4F; /* Colore della freccia al passaggio del mouse */
+}
+
+
+
+
+  /* Mobile */
+@media (max-width: 767.98px) { /* Bootstrap's default breakpoint for small devices */
+  #works {
+      margin: 20px;
+      margin-top: 100px;
+  }
+
+  .badge-custom {
+      background-color: #007bff; /* Colore di sfondo personalizzato */
+      color: #fff; /* Colore del testo */
+      font-size: 0.5rem; /* Dimensione del testo */
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 10vw; /* Riduce la dimensione del font per schermi più piccoli */
+      margin: 0;
+    }
+  
+    p {
+      font-size: 4vw; /* Riduce la dimensione del font per schermi più piccoli */
+      margin: 0;
+    }
+  
+    h2{
+      font-size: 24px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+}
+

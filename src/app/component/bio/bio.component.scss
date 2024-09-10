@@ -1,0 +1,59 @@
+.about {
+    text-align: center;
+    margin: 100px;
+  }
+
+#biography, #studies, #work-experience{
+    margin: 100px;
+}
+
+.skill-category {
+    margin-top: 30px;
+}
+
+.certifications {
+    margin: 100px;
+}
+
+
+
+
+/* Media query per dispositivi mobili */
+@media (max-width: 768px) {
+
+
+    #biography, #studies, #work-experience, .certifications, .about{
+        margin: 20px;
+    }
+
+    .about {
+        margin-top: 100px;
+    }
+  
+    h1 {
+      font-size: 10vw; /* Riduce la dimensione del font per schermi più piccoli */
+      margin: 0;
+    }
+  
+    p {
+      font-size: 4vw; /* Riduce la dimensione del font per schermi più piccoli */
+      margin: 0;
+    }
+  
+    #studies h2, #biography p {
+      
+      margin: 0; /* Rimuove il margine sinistro per schermi piccoli */
+    }
+  
+
+ 
+
+    h2{
+      font-size: 24px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+}

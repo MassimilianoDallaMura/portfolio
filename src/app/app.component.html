@@ -1,0 +1,20 @@
+<!-- app.component.html -->
+<app-navbar></app-navbar>
+
+<router-outlet></router-outlet>
+
+<!-- Toggle tema fisso -->
+<div class="theme-toggle" (click)="toggleTheme()">
+    <i class="fas fa-sun sun" [class.active]="!isDarkMode"></i>
+    <div class="toggle-btn" [class.dark]="isDarkMode"></div>
+    <i class="fas fa-moon moon" [class.active]="isDarkMode"></i>
+</div>
+
+<app-sidebar></app-sidebar>
+
+<app-footer></app-footer>
+
+<!-- Pulsante scroll-to-top -->
+<button class="scroll-to-top" [class.visible]="showScrollToTopButton" (click)="scrollToTop()">
+    <i class="fas fa-arrow-up"></i>
+</button>

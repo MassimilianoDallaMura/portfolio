@@ -1,0 +1,55 @@
+/* cv.component.css */
+.pdf-viewer {
+  border: none; /* Rimuove il bordo dell'iframe */
+  border-radius: 8px; /* Aggiunge angoli arrotondati */
+}
+
+
+  
+.btn-custom {
+  background-color: transparent;
+  border: 2px solid #04E762;
+  text-align: center;
+  color: #04E762;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
+  animation: bounce 2s infinite; /* Bounce animation added */
+}
+
+.btn-custom:hover {
+  background-color: #04E762;
+  color: #fff;
+  animation: bounce 0.5s; /* Faster bounce on hover */
+}
+
+.btn-filter {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: 2px solid #8752dd;
+  color: #8752dd;
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-filter.active {
+  background-color: #8752dd;
+  color: #fff;
+}
+  
+
+@media screen and (max-width: 768px) {
+  .pdf-container .cv-image {
+      display: block !important;
+      margin-top: 40px;
+  }
+
+  .pdf-container .pdf-viewer {
+      display: none !important;
+  }
+}

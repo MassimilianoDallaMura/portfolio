@@ -1,0 +1,26 @@
+/* app.component.scss */
+.scroll-to-top {
+    position: fixed;
+    bottom: 80px; /* Spazio dal basso */
+    right: 20px; /* Spazio dalla destra */
+    background-color: #000; /* Colore di sfondo */
+    color: #04E762; /* Colore del testo/icone */
+    border: 1 solid ;
+    border-color: #04E762;
+    border-radius: 50%;
+    width: 50px; /* Dimensione del pulsante */
+    height: 50px; /* Dimensione del pulsante */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px; /* Dimensione dell'icona */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .scroll-to-top.visible {
+    opacity: 1; /* Mostra il pulsante */
+  }
+  

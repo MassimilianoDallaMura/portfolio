@@ -1,0 +1,48 @@
+/* footer.component.scss */
+.mobile-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--navbar-background-color);
+  z-index: 1000;
+  box-sizing: border-box;
+  transition: transform 0.3s ease; /* Transizione per un movimento fluido */
+  border-top: 2px solid #8752dd; /* Corretto per aggiungere un bordo superiore */
+}
+
+.mobile-footer.hidden {
+  transform: translateY(100%); /* Nasconde il footer spostandolo fuori dalla viewport */
+}
+
+.mobile-footer.visible {
+  transform: translateY(0); /* Mostra il footer nella posizione originale */
+}
+
+.mobile-footer nav {
+  display: flex; /* Allinea gli elementi orizzontalmente */
+  justify-content: space-around; /* Spazio uniforme tra gli elementi */
+}
+
+.mobile-footer nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color); /* Colore del testo che cambia con il tema */
+}
+
+.mobile-footer nav i {
+  font-size: 24px; /* Dimensione delle icone */
+}
+
+.mobile-footer nav span {
+  font-size: 16px; /* Dimensione del testo sotto le icone */
+  margin-top: 4px; /* Spazio tra icona e testo */
+}
+
+/* Stile per la voce di menu attiva */
+.mobile-footer nav a.active {
+  color: #04E762; /* Colore del testo attivo */
+  font-weight: bold; /* Rendi il testo in grassetto per maggiore evidenza */
+}
