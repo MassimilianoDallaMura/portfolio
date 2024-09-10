@@ -24,3 +24,52 @@
     opacity: 1; /* Mostra il pulsante */
   }
   
+
+  .theme-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid var(--border-color); /* Cambia il colore del bordo in base al tema */
+    border-radius: 5px; /* Opzionale: aggiunge angoli arrotondati */
+    padding: 5px; /* Aggiunge spazio interno per evitare che il bordo tocchi direttamente le icone */
+    transition: border-color 0.3s; /* Aggiunge una transizione per il colore del bordo */
+    position: fixed; /* Posizione fissa */
+    top: 120px; /* Spazio dal bordo superiore */
+    right: 20px; /* Spazio dal bordo destro */
+    z-index: 1000; /* Assicura che il toggle sia sopra gli altri elementi */
+}
+
+.theme-toggle .toggle-btn {
+    width: 40px;
+    height: 20px;
+    background-color: var(--border-color);
+    border-radius: 10px;
+    margin: 0 10px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle .toggle-btn::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    transition: transform 0.3s;
+}
+
+.theme-toggle .toggle-btn.dark::before {
+    transform: translateX(20px);
+}
+
+.theme-toggle i.sun {
+    color: white;
+}
+
+.theme-toggle i.moon {
+    color: black;
+}
+

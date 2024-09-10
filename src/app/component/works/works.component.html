@@ -7,44 +7,44 @@
 
     <p class="text-start">Qui troverete una selezione di lavori che spaziano tra esperienze accademiche e progetti realizzati in contesti lavorativi. </p>
         <p class="text-start mb-4">Questa raccolta rappresenta i miei primi passi nel mondo dello sviluppo e del design ed ognuno di questi progetti rappresenta una tappa del mio percorso di crescita professionale.</p>
-    <div class="project-menu-list">
-        <div class="project-menu-item" data-href="project2.html">
-            <div class="project-menu-info">
-              <span class="project-menu-name">Enrico Gasparri</span>
-              <button class="btn btn-arrow">
-                <i class="bi bi-arrow-right"></i>
-              </button>
+        <div class="project-menu-list">
+            <div class="project-menu-item">
+                <div class="project-menu-info">
+                    <span class="project-menu-name">Enrico Gasparri</span>
+                    <button class="btn btn-arrow" onclick="location.href='#enrico'">
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="project-menu-item">
+                <div class="project-menu-info">
+                    <span class="project-menu-name">Matrimonio</span>
+                    <button class="btn btn-arrow" onclick="location.href='#matrimonio'">
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="project-menu-item">
+                <div class="project-menu-info">
+                    <span class="project-menu-name">Todo</span>
+                    <button class="btn btn-arrow" onclick="location.href='#todo'">
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="project-menu-item">
+                <div class="project-menu-info">
+                    <span class="project-menu-name">DonaTo</span>
+                    <button class="btn btn-arrow" onclick="location.href='#donato'">
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
             </div>
         </div>
-        <div class="project-menu-item" data-href="project2.html">
-          <div class="project-menu-info">
-            <span class="project-menu-name">Matrimonio</span>
-            <button class="btn btn-arrow">
-              <i class="bi bi-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-        <div class="project-menu-item" data-href="project2.html">
-            <div class="project-menu-info">
-              <span class="project-menu-name">Todo</span>
-              <button class="btn btn-arrow">
-                <i class="bi bi-arrow-right"></i>
-              </button>
-            </div>
-        </div>
-        <div class="project-menu-item">
-          <div class="project-menu-info">
-            <span class="project-menu-name">DonaTo</span>
-            <button class="btn btn-arrow"  onclick="location.href='#donato'">
-              <i class="bi bi-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-
-    </div>
+        
 
 <!-- Projects Section -->
-<div class="projects-menu">
+<div id="enrico" class="projects-menu">
     <!-- Project 1 -->
     <div class="project-item">
         <h2>// Enrico Gasparri</h2>
@@ -178,7 +178,7 @@
     </div>
 
     <!-- Project 2 -->
-    <div class="project-item">
+    <div id="matrimonio" class="project-item">
         <h2>// Wedding D+G</h2>
         <span class="badge badge-custom">Web app</span>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, distinctio.</p>
@@ -332,7 +332,7 @@
     </div>
 
     <!-- Project 3 -->
-    <div class="project-item">
+    <div id="todo" class="project-item">
         <h1>Todo List</h1>
         <span class="badge badge-custom">Project</span>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, distinctio.</p>
@@ -430,7 +430,7 @@
                     <div class="carousel-item active">
                         <div class="video-container">
                             <video id="video1" width="100%" height="auto" loop muted controls>
-                                <source src="../../../assets/matrimonio/1.mp4" type="video/mp4">
+                                <source src="../../../assets/donato/1.mp4" type="video/mp4">
                                 Il tuo browser non supporta il video.
                             </video>
                             <button class="play-pause" onclick="togglePlayPause('video1')">Play</button>
@@ -442,7 +442,7 @@
                     <div class="carousel-item">
                         <div class="video-container">
                             <video id="video2" width="100%" height="auto" loop muted controls>
-                                <source src="../../../assets/matrimonio/2.mp4" type="video/mp4">
+                                <source src="../../../assets/donato/2.mp4" type="video/mp4">
                                 Il tuo browser non supporta il video.
                             </video>
                             <button class="play-pause" onclick="togglePlayPause('video1')">Play</button>

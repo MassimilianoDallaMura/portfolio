@@ -42,7 +42,7 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
       updateCarousel();
     });
 
-    // Auto-slide every 5 seconds
+    // auto slide ogni 5 sec
     this.intervalId = setInterval(() => {
       currentIndex = (currentIndex < itemCount - 1) ? currentIndex + 1 : 0;
       updateCarousel();
