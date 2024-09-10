@@ -35,7 +35,7 @@
     transition: border-color 0.3s; /* Aggiunge una transizione per il colore del bordo */
     position: fixed; /* Posizione fissa */
     top: 120px; /* Spazio dal bordo superiore */
-    right: 20px; /* Spazio dal bordo destro */
+    right: 15px; /* Spazio dal bordo destro */
     z-index: 1000; /* Assicura che il toggle sia sopra gli altri elementi */
 }
 
@@ -73,3 +73,42 @@
     color: black;
 }
 
+/* Nascondi la sidebar su mobile */
+@media (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+  
+    .mobile-footer {
+      display: flex;
+      justify-content: space-around;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      border-top: 1px solid #ddd;
+      padding: 10px 0;
+      z-index: 1000;
+  
+      nav {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+      }
+  
+      a {
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+      }
+    }
+  
+    .theme-toggle {
+      top: 80px; /* 
+      z-index: 1000; /* Assicura che il toggle sia sopra gli altri elementi */
+  }
+  }
+
+  
+  
