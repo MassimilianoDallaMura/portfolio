@@ -9,8 +9,8 @@ export class SidebarComponent implements AfterViewInit {
   private isDragging: boolean = false;
   private startX: number = 0;
   private currentX: number = 0;
-  private sidebarWidth: number = 250; // Width of the sidebar
-  private closedOffset: number = 220; // Amount of sidebar hidden when closed
+  private sidebarWidth: number = 300; // Width of the sidebar
+  private closedOffset: number = 280; // Amount of sidebar hidden when closed
 
   constructor(private el: ElementRef) {}
 
