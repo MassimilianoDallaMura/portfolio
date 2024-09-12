@@ -296,5 +296,15 @@ video {
       font-size: 18px;
     }
 
+    .btn-custom-static, .btn-custom-git {
+      font-size: 4vw;
+      padding: 5px;
+      border: 2px solid;
+      border-radius: 4px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      display: inline-block; /* Aggiungi questa proprietà per mantenere le dimensioni del pulsante */
+    }
 }
 

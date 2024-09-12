@@ -3,9 +3,9 @@
 
 
     <div class="container scroll-section">
-        <h1 style="text-align: center;">I'M A <br> <span style="color: #8752dd;">JUNIOR WEB DEVELOPER</span> <br> BASED IN TURIN, ITALY.</h1>
+        <h1 style="text-align: center;">SONO UNO<br> <span style="color: #8752dd;">JUNIOR WEB DEVELOPER</span> <br> DI BASE A TORINO.</h1>
         <p style="margin-top: 5px; text-align: center;">
-          With a background as a Full Stack Web Developer with skills in both frontend and backend.
+          Con una formazione come Full-stack Web Developer con competenze sia nel frontend sia nel backend.
         </p>
         <div class="btn-container">
           <button type="button" class="btn btn-custom" onclick="location.href='#scopri'">Scopri di più</button>
@@ -15,8 +15,7 @@
       <div>
         <span id="scopri" style="height: 100px;"></span>
         <p  class="scopri"xs>
-          I love to coding because it is not just a sequence of instructions but <span style="color: #8752dd;">a true form of logical and creative expression</span>, where technical skills merge with my passion for communication and the creation of innovative digital products.
-        </p>
+          Amo la programmazione perché non è una semplice sequenza di istruzioni ma <span style="color: #8752dd;">una vera e propria forma di espressione logica e creativa</span>, in cui le competenze tecniche si fondono con la mia passione per la comunicazione e la creazione di prodotti digitali innovativi.        </p>
       </div>
       
         
@@ -33,94 +32,97 @@
             <p> <span style="color: #dc1b95;">
               <a href="https://epicode.com/it/chi-siamo/" target="_blank" style="color: #dc1b95; text-decoration: none;">EPICODE!</a>
             </span> 
-            It' s a European ed-tech company specialized in training and integrating tech talents into the workforce. EPICODE witdh its style and metod has a strong reputation in the industry. Its vision is to create a new generation of tech specialists ready for the challenges of the future.</p>
-          </div>
+            È un'azienda europea di tecnologia educativa specializzata nella formazione e nell'inserimento lavorativo. EPICODE con il suo stile e metodo ha una solida reputazione nel settore. La sua visione è quella di creare una nuova generazione di specialisti tech pronti per le sfide del futuro.</p>          </div>
         </div>
 
-        <div id="studies2" style="text-align: center;">
-          <img src="../../../assets/certificato epicode.webp" alt="" width="50%" style="margin-top: 40px; text-align: center; border-radius: 8px;">
-          <h6 class="mt-3" style="margin-bottom: 50px;">puoi vedere le mie certificazioni qui</h6>
-        </div>
-      
-        <div class="btn-container">
-          <button type="button" class="btn btn-custom" onclick="location.href='/bio'">Scopri di più</button>
-        </div>
+        <div id="studies2" style="text-align: center; cursor: pointer;" (click)="navigateToCertifications()">
+          <img src="../../../assets/certificato epicode.webp" alt="" width="50%" style="margin-top: 40px; border-radius: 8px;">
+          <h6 class="mt-3" style="margin-bottom: 50px;">
+              puoi vedere le mie certificazioni <a (click)="navigateToCertifications()" style="color: #04E762;">qui</a>
+          </h6>
+      </div>
+   
 
       </div>
       
       <div id="languages" class="languages" style="margin-top: 150px; margin-bottom: 150px;">
-        <h2 style="text-transform: uppercase; text-align: start; margin-bottom: 100px;"># The languages and tools I use are</h2>
-        <p>For the <span style="color: #8752dd;">frontend</span> I use <span style="color: #8752dd;">HTML</span>, <span style="color: #8752dd;">CSS</span>, and <span style="color: #8752dd;">JavaScript</span> to develop engaging user interfaces, and with <span style="color: #8752dd;">Angular</span>, I build responsive and modular web applications. On the <span style="color: #8752dd;">backend</span>, I work with <span style="color: #8752dd;">Java</span> and <span style="color: #8752dd;">Spring Boot</span> to ensure secure and high-performance applications. For <span style="color: #8752dd;">database</span> management, I utilize <span style="color: #8752dd;">PostgreSQL</span>. This technology stack enables me to create comprehensive <span style="color: #8752dd;">full-stack</span> web solutions, covering everything from design to data management.</p>
+        <h2 style="text-transform: uppercase; text-align: start; margin-bottom: 100px;"># I linguaggi e gli strumenti che uso sono</h2>
+        <p>
+          Per il <span style="color: #8752dd;">frontend</span> utilizzo <span style="color: #8752dd;">HTML</span>, <span style="color: #8752dd;">CSS</span> e <span style="color: #8752dd;">JavaScript</span> per sviluppare siti accattivanti e con <span style="color: #8752dd;">Angular</span>, creo applicazioni web modulari e responsive. Per il <span style="color: #8752dd;">backend</span>, lavoro con <span style="color: #8752dd;">Java</span> e <span style="color: #8752dd;">Spring Boot</span> per creare applicazioni con un linguaggio di programmazione solido, versatile e modulare. Per la gestione del <span style="color: #8752dd;">database</span>, utilizzo <span style="color: #8752dd;">PostgreSQL</span>. Questo stack tecnologico mi consente di creare soluzioni web complete <span style="color: #8752dd;">full-stack</span>, che coprono tutto, dalla progettazione alla gestione dei dati.      
+        </p>
       
         <!-- Griglia per le icone -->
-        <div class="row" style="text-align: center;">
-          <div class="col-2 col-sm-3">
+        <div class="row d-flex" style="text-align: center;">
+          <div class="col-4 col-sm-3 col-md-2 col-lg-2">
             <img src="../../../assets/html.svg" alt="HTML Logo" class="icon">
           </div>
-          <div class="col-2 col-sm-3">
+          <div class="col-4 col-sm-3 col-md-2 col-lg-2">
             <img src="../../../assets/css.svg" alt="CSS Logo" class="icon" >
           </div>
-          <div class="col-2 col-sm-3">
+          <div class="col-4 col-sm-3 col-md-2 col-lg-2">
             <img src="../../../assets/javascript.svg" alt="JavaScript Logo" class="icon">
           </div>
-          <div class="col-2 col-sm-3">
+          <div class="col-4 col-sm-3 col-md-2 col-lg-2">
             <img src="../../../assets/angular.svg" alt="Angular Logo" class="icon">
           </div>
-          <div class="col-2 col-sm-3">
+          <div class="col-4 col-sm-3 col-md-2 col-lg-2">
             <img src="../../../assets/java.svg" alt="Java Logo" class="icon">
           </div>
-          <div class="col-2 col-sm-3">
+          <div class="col-4 col-sm-3 col-md-2 col-lg-2">
             <img src="../../../assets/postgre.svg" alt="PostgreSQL Logo" class="icon">
           </div>
-          <div class="col-2 col-sm-3">
+          <div class="col-4 col-sm-3 col-md-2 col-lg-2">
             <img src="../../../assets/postman.svg" alt="Postman Logo" class="icon">
           </div>
-          <div class="col-2 col-sm-3">
+          <div class="col-4 col-sm-3 col-md-2 col-lg-2">
             <img src="../../../assets/bootstrap.svg" alt="Bootstrap Logo" class="icon">
           </div>
-          <div class="col-2 col-sm-3">
+          <div class="col-4 col-sm-3 col-md-2 col-lg-2">
             <img src="../../../assets/springboot.svg" alt="Spring Boot Logo" class="icon">
           </div>
-          <div class="col-2 col-sm-3">
+          <div class="col-4 col-sm-3 col-md-2 col-lg-2">
             <img src="../../../assets/typescript.svg" alt="typescript Boot Logo" class="icon">
           </div>
         </div>
 
-        <h3 style="text-transform: uppercase; text-align: start; margin-top: 70px; margin-bottom: 100;">... but I also had the opportunity to get to know</h3>
+        <h3 style="text-transform: uppercase; text-align: start; margin-top: 70px; margin-bottom: 100;">... Ma ho avuto l'opportunità di utilizzare:</h3>
         <!-- Griglia per le icone -->
-        <div class="row" style="text-align: center;">
-          <div class="col-2 col-sm-3">
+        <div class="row d-flex" style="text-align: center;">
+          <div class="col-4 col-sm-3 col-md-2 col-lg-2">
             <img src="../../../assets/canva.svg" alt="canva Logo" class="icon">
           </div>
-          <div class="col-2 col-sm-3">
+          <div class="col-4 col-sm-3 col-md-2 col-lg-2">
             <img src="../../../assets/asana.svg" alt="asana Logo" class="icon" >
           </div>
-          <div class="col-2 col-sm-3">
+          <div class="col-4 col-sm-3 col-md-2 col-lg-2">
             <img src="../../../assets/wordpress.svg" alt="worpress Logo" class="icon">
           </div>
-          <div class="col-2 col-sm-3">
+          <div class="col-4 col-sm-3 col-md-2 col-lg-2">
             <img src="../../../assets/semrush.svg" alt="semrush Logo" class="icon">
           </div>
-          <div class="col-2 col-sm-3">
+          <div class="col-4 col-sm-3 col-md-2 col-lg-2">
             <img src="../../../assets/figma.svg" alt="figma logo" class="icon">
           </div>
-          <div class="col-2 col-sm-3">
+          <div class="col-4 col-sm-3 col-md-2 col-lg-2">
             <img src="../../../assets/elementor.svg" alt="elementor logo" class="icon">
           </div>
 
         </div>
 
+        <div class="d-flex justify-content-center" style="margin-top: 50px;">
+          <button type="button" class="btn btn-custom" onclick="location.href='/works'">Approfondisci</button>
+        </div>
       </div>
 
 
+
       <div id="works" class="works" style="margin-bottom: 150px;">
-        <h2 style="text-transform: uppercase; margin-top: 30px; margin-bottom: 100px;"># What I do</h2>
+        <h2 style="text-transform: uppercase; margin-top: 30px; margin-bottom: 100px;"># Cosa faccio</h2>
 
         <p style="margin-bottom: 70px;">
-          I create responsive websites that adapt to various devices, whether it's for showcase sites, effective and targeted landing pages, or complex websites with custom solutions. I also offer e-commerce and business management development services.        </p>
-
+          Creo siti web responsive che si adattano a vari dispositivi, che si tratti di siti vetrina, landing page efficaci e mirate o siti web complessi con soluzioni personalizzate. Offro anche servizi di sviluppo di e-commerce e gestione aziendale. </p>
         <p>
-          A <span class="portfolio" style="color: #8752dd; margin-bottom: 100px;">portfolio</span> of my projects and works
+          Un <span class="portfolio" style="color: #8752dd; margin-bottom: 100px;">portfolio</span> dei miei progetti e lavori:
         </p>
         
         <div class="progetti projects-wrapper row flex-nowrap" style="margin-bottom: 50px;">
@@ -185,7 +187,7 @@
 
         <!-- Pulsante See all projects -->
         <div class="d-flex justify-content-center mt-4">
-          <button type="button" class="btn btn-custom" onclick="location.href='/works'">See all projects</button>
+          <button type="button" class="btn btn-custom" onclick="location.href='/works'">Vedi tutti i progetti</button>
         </div>
       </div>
 </div>

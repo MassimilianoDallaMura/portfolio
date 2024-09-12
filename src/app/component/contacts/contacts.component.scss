@@ -13,6 +13,13 @@
         margin-top: 100px;
     }
 
+    #studies h2, #biography p{
+      margin: 0; /* Rimuove il margine sinistro per schermi piccoli */
+    }
+
+    .list {
+      margin: 0;
+    }
 
   
     h1 {
@@ -25,13 +32,7 @@
       margin: 0;
     }
   
-    #studies h2, #biography p {
-      
-      margin: 0; /* Rimuove il margine sinistro per schermi piccoli */
-    }
-  
 
- 
 
     h2{
       font-size: 24px;
@@ -40,5 +41,17 @@
     h3 {
       font-size: 18px;
     }
+
+    /* Aggiungi al tuo CSS */
+.list p {
+  word-wrap: break-word; /* Permette al testo di andare a capo */
+  overflow-wrap: break-word; /* Aggiunge supporto per il wrapping su testo lungo */
+}
+
+.list a {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 
 }

@@ -1,4 +1,5 @@
 import { Component, AfterViewInit, OnDestroy } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,8 @@ import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 })
 export class HomeComponent implements AfterViewInit, OnDestroy {
   private intervalId: any;
+
+  constructor(private router: Router) {}
 
   ngAfterViewInit(): void {
     this.initCarousel();
@@ -42,10 +45,27 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
       updateCarousel();
     });
 
-    // auto slide ogni 5 sec
+    // Auto slide ogni 5 sec
     this.intervalId = setInterval(() => {
       currentIndex = (currentIndex < itemCount - 1) ? currentIndex + 1 : 0;
       updateCarousel();
     }, 5000);
   }
+
+  navigateToCertifications(): void {
+    this.router.navigate(['/bio'], { fragment: 'certifications' }).then(() => {
+      //  setTimeout per assicurare che la navigazione sia completata
+      setTimeout(() => {
+        const element = document.getElementById('certifications');
+        if (element) {
+          // Scorre fino all'elemento e applica un offset
+          window.scrollTo({
+            top: element.getBoundingClientRect().top + window.scrollY - 300, 
+            behavior: 'smooth'
+          });
+        }
+      }, 0);
+    });
+  }
+  
 }
