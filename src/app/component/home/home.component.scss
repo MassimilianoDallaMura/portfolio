@@ -116,15 +116,15 @@ body {
   /* Contenitore per i progetti */
   .projects-wrapper {
     margin: 0;
+    margin-top: 40px;
     display: flex;
     gap: 20px;
     overflow-x: auto; /* Permette lo scorrimento orizzontale solo se necessario */
-    justify-content: flex-start; /* Allinea i progetti all'inizio */
+    justify-content: center; /* Allinea i progetti all'inizio */
     align-items: center;
     width: 100%;
     max-width: 100%;
     max-width: 100%; /* Impedisce di eccedere la larghezza dello schermo */
-    margin: auto; /* Centralizza il contenitore se più piccolo dello schermo */
     padding-left: 10px; /* Evita che il primo progetto venga tagliato */
   
   }
@@ -217,13 +217,16 @@ body {
     }
   
     p {
-      font-size: 4vw; /* Riduce la dimensione del font per schermi più piccoli */
+      font-size: 5vw; /* Riduce la dimensione del font per schermi più piccoli */
       margin: 0;
     }
   
     #studies h2, #biography p {
       
       margin: 0; /* Rimuove il margine sinistro per schermi piccoli */
+    }
+    .languages h2 {
+      margin-bottom: 20px;
     }
  
 

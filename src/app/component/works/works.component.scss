@@ -12,6 +12,10 @@
     margin-bottom: 20px;
 }
 
+.custom-list li {
+  font-size: 20px; /* Dimensione del testo */
+}
+
 .btn-custom-static {
     color: #04E762;
     background-color: transparent;
@@ -98,7 +102,6 @@ color: #fff;
 .badge-tech {
   margin-right: 10px; /* Aggiungi spazio tra le badge */
 }
-
 
 
 /* styles.css */
@@ -284,7 +287,7 @@ video {
     }
   
     p {
-      font-size: 4vw; /* Riduce la dimensione del font per schermi più piccoli */
+      font-size: 5vw; /* Riduce la dimensione del font per schermi più piccoli */
       margin: 0;
     }
   
@@ -305,6 +308,10 @@ video {
       text-transform: uppercase;
       font-weight: bold;
       display: inline-block; /* Aggiungi questa proprietà per mantenere le dimensioni del pulsante */
+    }
+
+    .custom-list li {
+      font-size: 16px; /* Dimensione del testo */
     }
 }
 
