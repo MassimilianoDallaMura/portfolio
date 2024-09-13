@@ -313,5 +313,14 @@ video {
     .custom-list li {
       font-size: 16px; /* Dimensione del testo */
     }
+
+    .video-container video {
+      width: 100%; /* Adatta il video alla larghezza del contenitore */
+      height: auto; /* Mantiene le proporzioni */
+  }
+  
+  .video-container {
+    width: 100%; /* Imposta la larghezza del contenitore su mobile */
+}
 }
 
